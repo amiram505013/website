@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="">
+            <span class="fon">تکالیف</span>
+        </a>
+        <a href="../index/index.htm">
+            <span class="fon">برنامه درسی</span>
+        </a>
+    </header>
+    <div class="contente">
+        <div class="header">
+            <div class="right">
+                <h3>مدرسه : اصحاب کسا</h3>
+                <h3>پایه : 9</h3>
+                <h3>کلاس : شهید طهرانی مقدم</h3>
+            </div>
+            <div class="left open">
+                <div class="add-1 add"></div>
+                <div class="add-2 add open"></div>
+            </div>
+        </div>
+        <div class="cont" id="list-to">
+            
+        </div>
+    </div>
+    <div class="add-to-list">
+        <div class="close" id="add-list">
+            <div class="del-1 del"></div>
+            <div class="del-2 del"></div>
+        </div>
+        <div class="input">
+            <label for="">اسم درس</label><br>
+            <input type="text" required id="name"><br>
+            <label for="">نوع تکلیف</label><br>
+            <input required type="text" id="des"><br>
+            <div class="container">
+                <div class="toggle-switch">
+                    <label>
+                        <input type="checkbox" id="toggle" class="toggle-checkbox">
+                        <div class="toggle-label"></div>
+                    </label>
+                </div>
+                <div class="content" id="login-content">
+                    <label for="">زمان باقی مانده به روز</label><br>
+                    <input required type="number" id="tim">
+                </div>
+                <div class="content" id="register-content">
+                    <label for="">در حال بروزرسانی</label><br>
+                    <input required type="date" disabled style="padding: 0 10px;">
+                </div>
+            </div>
+            <input type="submit" value="Done" id="done"><br>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

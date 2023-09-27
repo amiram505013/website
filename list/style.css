@@ -1,0 +1,287 @@
+@font-face {
+    font-family: iran;
+    src: url(../index/iran.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fon{
+    font-family: iran;
+
+}
+
+body{
+    background-color: #1e272e;
+    font-family: iran;
+
+}
+
+
+
+
+
+.contente{
+    margin: 60px auto;
+    width: 80vw;
+    height: 80vh;
+    background-color: #d1d8e0;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+.header{
+    background-color: #1213135f;
+    width: 100%;
+    height: 50px;
+}
+
+header{
+    background-color: white;
+    border-radius: 20px;
+    width: 400px;
+    height: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header a{
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0 50px;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+
+header a:first-child{
+    color: rgba(0, 0, 0, 0.636);
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right{
+    display: flex;
+}
+.right h3{
+    margin: 0 30px;
+    display: flex;
+}
+.add{
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    color: black;
+    background-color: black;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.left:hover .add-1{
+    background-color: green;
+    transform: rotate(45deg);
+}
+.left:hover .add-2{
+    background-color: purple;
+    transform: rotate(-45deg);
+}
+
+.add-1{
+    position: relative;
+    top: 4px;
+    left: 40px;
+    transform: rotate(90deg);
+}
+.add-2{
+    position: relative;
+    top: 0px;
+    left: 40px;
+}
+
+.del{
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    transition: all .5s;
+}
+.close:hover .del-1{
+    transform: rotate(-40deg);
+    background-color: green;
+}
+.close:hover .del-2{
+    transform: rotate(40deg);
+    background-color: purple;
+}
+
+
+
+
+.del-1{
+    position: relative;
+    top: calc(4px + 15px);
+    left: 230px;
+    transform: rotate(45deg);
+}
+.del-2{
+    position: relative;
+    top: 15px;
+    left: 230px;
+    transform: rotate(-45deg);
+}
+
+.close{
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.add-to-list{
+    width: 500px;
+    height: 600px;
+    background-color: #1e272e;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    display: none;
+
+}
+
+
+/* swi */
+
+/* Add your styles here */
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.toggle-switch {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    display: inline-block;
+    position: relative;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #3f51b5;
+}
+
+.toggle-label:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-label:before {
+    left: 30px;
+}
+.content {
+    display: none;
+}
+
+#login-content {
+    display: block;
+}
+
+/* Add more styling for your login and register forms */
+
+input{
+    outline: none;
+    border: none;
+    width: 300px;
+    height: 50px;
+    border-radius: 30px ;
+    margin: 20px;
+    transition: all .5s;
+    text-align: center;
+}
+
+label{
+    color: white;
+}
+
+input[type="submit"]:hover{
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+input:focus{
+    border: 2px solid rgba(0, 0, 0, 0.479);
+    box-shadow: 0 0 5px 10px white;
+    text-align: center;
+}
+
+
+
+.item{
+    width: 70vw;
+    height: 50px;
+    background-color: white;
+    margin: 10px 5vw;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#clear-button{
+    background-color: black;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+#clear-button:hover{
+    background-color: white;
+    color: black;
+}
