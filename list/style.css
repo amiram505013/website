@@ -285,3 +285,39 @@ input:focus{
     background-color: white;
     color: black;
 }
+
+
+
+@media screen and (max-width:500px) {
+    
+    .right{
+        flex-direction: column;
+        
+    }
+    #clear-button{
+        width: 50px;
+    }
+    #clear-button *{
+        font-size: 15px;
+    }
+    .item *{
+        font-size: 14px;
+    }
+    .item{
+        flex-direction: row;
+        height: 150px;
+        padding: 10px;
+    }
+
+    .item div{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .header{
+        height: 100px;
+    }
+    .add-to-list{
+
+    }
+}

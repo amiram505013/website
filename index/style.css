@@ -111,3 +111,19 @@ header a{
 header a:last-child{
     color: rgba(0, 0, 0, 0.636);
 }
+
+@media screen and (max-width:500px) {
+    
+    .tat{
+        display: none;
+    }
+
+    .name{
+        display: none;
+        position: absolute;
+    }
+
+    table{
+        height: 500px;
+    }
+}

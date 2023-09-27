@@ -59,13 +59,23 @@ open.addEventListener('click' , ()=>{
 
 
 submit.addEventListener('click' , ()=>{
-  addDars(`${name2}`,`${des2}`,time2)
 
+  if (name2 != "" && des2 != "" && time2 != "") {
+    addDars(`${name2}`,`${des2}`,time2)
+    popup.style.display = 'none'
+    time1.value =""
+    des1.value =""
+    name1.value =""
+    time2 = ""
+    des2 = ""
+    name2 = ""
+  }
 })
 
 var curr = 1
 function addDars(name, dse, time) {
   let div = document.createElement('div');
+  let div1 = document.createElement('div');
   let h21 = document.createElement('h2');
   let h22 = document.createElement('h2');
   let h3 = document.createElement('h3');
@@ -73,6 +83,7 @@ function addDars(name, dse, time) {
   let span1 = document.createElement('span');
   let span2 = document.createElement('span');
   let span3 = document.createElement('span');
+  let span4 = document.createElement('span');
 
   div.id = curr;
   div.classList.add('item');
@@ -92,7 +103,9 @@ function addDars(name, dse, time) {
 
   // ایجاد دکمه حذف برای هر آیتم
   const deleteButton = document.createElement('button');
-  deleteButton.innerText = 'حذف';
+  span4.innerText = 'حذف'
+  span4.classList.add('fon')
+  deleteButton.appendChild(span4)
   deleteButton.id = 'clear-button'
   deleteButton.addEventListener('click', function() {
     div.remove();
@@ -100,10 +113,11 @@ function addDars(name, dse, time) {
     localStorage.removeItem(`time_${div.id}`);
   });
 
-  div.appendChild(h21);
-  div.appendChild(h22);
-  div.appendChild(h3);
-  div.appendChild(h4);
+  div1.appendChild(h21);
+  div1.appendChild(h22);
+  div1.appendChild(h3);
+  div1.appendChild(h4);
+  div.appendChild(div1); // اضافه کردن دکمه حذف به آیتم
   div.appendChild(deleteButton); // اضافه کردن دکمه حذف به آیتم
 
   item.appendChild(div);
