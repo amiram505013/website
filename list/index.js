@@ -19,6 +19,9 @@ var time2 = time1.value
 var des2  = des1.value
 var name2 = name1.value
 
+function listhtml(){
+  window.location.href = 'https://amiram505013.github.io/website/index/'
+}
 
 time1.addEventListener('input' , (e)=>{
   time2 = e.target.value
