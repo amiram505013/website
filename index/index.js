@@ -11,7 +11,9 @@ const date = new Date()
 const day = date.getDay()
 
 
-
+function listhtml(){
+    window.location.href = 'https://amiram505013.github.io/website/index/'
+}
 
 
 
